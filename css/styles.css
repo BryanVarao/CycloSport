@@ -1,21 +1,62 @@
 /*------------------------------------------------------------------------------
    Generique
 ------------------------------------------------------------------------------*/
-    html {
-box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /*------------------------------------------------------------------------------
-   Base
+   Mise en page
 ------------------------------------------------------------------------------*/
 .wrapper{
     width: 1320px;
+    margin: 0 auto;
+}
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FFF8F8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+body section + header  + footer{
+    padding: 50px auto;
+    margin: 50px auto;
+}
+
+.header{
+    background-color: #B7B7B7;
+}
+
+.hero{
+    background: url("../images/HERO.png") center / cover no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.equipe{
+    background-color: #FF5441;
+}
+
+.contact{
+    background-color: #FF5441;
+}
+
+footer{
+    background-color: #565D67;
+    height: 130px;
 }
 h1{
     font: 400 2.375rem "Montserrat", sans-serif;
@@ -32,19 +73,43 @@ h3{
 h4{
     font: 300 1.875rem "Montserrat", sans-serif;
 }
+
 a{
     font: 500 0.75rem "Montserrat", sans-serif;
 }
+
 p{
-    font: 400 0.875rem"Manrope", sans-serif;
+    font: 400 0.875rem/28px "Manrope", sans-serif;
 }
-.button{
-    font: 400 1.125rem "Bebas Neue", sans-serif;
-}
+
+
+
 /*------------------------------------------------------------------------------
    Elements
 ------------------------------------------------------------------------------*/
+/* Header */
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /*------------------------------------------------------------------------------
     Components
 ------------------------------------------------------------------------------*/
+button{
+    font: 400 1.125rem "Bebas Neue", sans-serif;
+    background-color: #CC0000;
+    border-color: #EA6060;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #fff;
+    border-color: #CC0000;
+    color: #CC0000;
+}
