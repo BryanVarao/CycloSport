@@ -98,7 +98,6 @@ ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 li{
@@ -136,6 +135,13 @@ li a:hover{
     margin: 50px auto;
 }
 
+.inscription .special{
+    padding: 10px 30px;
+    font-size: 1.125rem;
+    max-width: 150px;
+    align-self: center;
+}
+
 /* Equipe */
 
 .equipe .flex{
@@ -152,22 +158,55 @@ li a:hover{
 .equipe .profil img{
     max-height: 360px;
 }
+
+/* Produit */
+.produits ul{
+    max-width: 420px;
+}
+.produits ul a{
+ color: #fff;
+}
+
+.produits .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 70px;
+}
+
+.produits .cart{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+.produits .cart img{
+    background-color: rgba(166, 161, 161, 0.20);
+    border-radius: inherit;
+}
+
+.produits .special{
+    font-size: 1.125rem;
+    padding: 10px 30px;
+    align-self: center;
+}
 /*------------------------------------------------------------------------------
     Components
 ------------------------------------------------------------------------------*/
-button{
-    font: 400 1.125rem "Bebas Neue", sans-serif;
+.btn{
+    font: 400 0.75rem "Bebas Neue", sans-serif;
     background-color: #CC0000;
     border-color: #EA6060;
-}
-
-button a{
     color: #fff;
+    padding: 5px 10px;
     text-decoration: none;
 }
 
-button:hover{
+.btn:hover{
     background-color: #fff;
-    border-color: #CC0000;
+    border:1px solid #CC0000;
     color: #CC0000;
 }
