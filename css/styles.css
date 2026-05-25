@@ -65,6 +65,7 @@ footer{
 h2{
     font: 700 1.875rem "Montserrat", sans-serif;
     margin: 0;
+    text-transform: uppercase;
 }
 
 h3{
@@ -89,11 +90,10 @@ p{
     padding: 0;
 }
 
-
-
 /*------------------------------------------------------------------------------
    Elements
 ------------------------------------------------------------------------------*/
+
 /* Header */
 nav{
     max-width: 712px;
@@ -111,14 +111,76 @@ li{
 }
 
 li a{
+    display: inline-block;
     text-decoration: none;
     color: #000;
+    transition: 0.2 ease;
 }
 
 li a:hover{
     color: #CC0000;
-    font-size: 0.875rem;
+    transform: scale(1.1);
 }
+
+/* Contact */
+.contact .wrapper{
+    background-color: #FFF8F8;
+    padding: 50px;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.map{
+    display: flex;
+    gap: 79px;
+    align-items: center;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+}
+.map .informations p{
+    margin: 0;
+}
+
+.contact .btn{
+    padding: 15px 40px;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+#button .icon{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 5px;
+    /* Trouver sur internet */
+    transition: 0.2 ease;
+}
+
+
+#button .icon:hover{
+    /* Trouver sur internet */
+    transform: scale(1.1);
+}
+
+
+/* Page d'acceuil */
 
 /* Hero */
 .hero article{
@@ -186,26 +248,28 @@ li a:hover{
     gap: 20px 70px;
 }
 
-.produits .cart{
+.cart{
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 10px;
-
     border: 1px solid #000;
     border-radius: 30px;
+    margin: auto;
 }
 
-.produits .cart img{
+.cart img{
     background-color: rgba(166, 161, 161, 0.20);
     border-radius: inherit;
 }
 /* essayer de voir avec la prof comment régler ça car déjà une bordure donc impossible de régler bordure d'avance sur le cart avant hover*/
-.produits .cart:hover{
+.cart:hover{
     border-top: 20px solid #000;
     border-right:6px solid #000;
     border-left: 6px solid #000;
     border-bottom: 3px solid #000;
+    cursor: pointer;
+    margin: auto;
 }
 
 .produits .special{
@@ -219,53 +283,77 @@ li a:hover{
     justify-self: center;
 }
 
-/* Contact */
-.contact .wrapper{
-    background-color: #FFF8F8;
+
+/* Page d'article */
+
+.vedette{
+    background-color: #FF5441;
+}
+
+.produit{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
     padding: 50px;
 }
-.contenu{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+
+.produit img{
+    height: 570px;
+    background-color: #FFF8F8;
+    border-radius: 30px;
 }
 
-.map{
-    display: flex;
-    gap: 79px;
-    align-items: center;
-}
-
-.informations{
+.affichage{
     display: flex;
     flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: start;
+    background: rgba(44, 44, 44, 0.90);
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+}
+
+.fiche .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px 128px;
+}
+
+
+/* Page produit*/
+
+/* Hero*/
+.vedette .liste{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.vedette .liste img{
+    height: 100vh;
+}
+
+.details{
+    background-color: #D9D9D9;
+}
+
+.details .renseignements{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     gap: 20px;
     text-align: start;
 }
-.map .informations p{
-    margin: 0;
-}
 
-.contact .btn{
-    padding: 15px 40px;
-    margin: auto;
-    font-size: 1.5rem;
-}
-
-/* Footer */
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-}
-
-#button .icon{
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    font-size: 2rem;
-    padding: 5px;
+.details .renseignements .precision p{
+    
 }
 /*------------------------------------------------------------------------------
     Components
@@ -273,7 +361,7 @@ li a:hover{
 .btn{
     font: 400 0.75rem "Bebas Neue", sans-serif;
     background-color: #CC0000;
-    border-color: #EA6060;
+    border: 1px solid #EA6060;
     color: #fff;
     padding: 5px 10px;
     text-decoration: none;
