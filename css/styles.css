@@ -401,10 +401,35 @@ section .change{max-width: 200px}
     text-align: start;
 }
 
+
 .details .renseignements .precision p{
     max-width: unset;
 }
 
+.externe{
+    display: flex;
+    align-content: space-between;
+    gap: 50px;
+}
+
+.sens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #000;
+    
+}
+
+
+.plus{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+}
+
+.plus a{
+    text-decoration: none;
+}
 
 /* modal conteneur*/
 .personne{
@@ -415,11 +440,6 @@ section .change{max-width: 200px}
     border-radius: 30px;
 }
 
-.externe{
-    display: flex;
-    align-content: space-between;
-    gap: 50px;
-}
 /*------------------------------------------------------------------------------
     Components
 ------------------------------------------------------------------------------*/
