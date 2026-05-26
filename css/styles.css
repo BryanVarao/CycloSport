@@ -296,13 +296,6 @@ li a:hover{
 /* essayer de voir avec la prof comment régler ça car déjà une bordure donc impossible de régler bordure d'avance sur le cart avant hover*/
 .cart:hover{
     outline-width: 6px;
-    /*
-    border-top: 20px solid #000;
-    border-right:6px solid #000;
-    border-left: 6px solid #000;
-    border-bottom: 3px solid #000;
-    cursor: pointer;
-    */
 }
 
 .produits .special{
