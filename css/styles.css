@@ -187,13 +187,11 @@ li a:hover{
     border-radius: 50%;
     font-size: 2rem;
     padding: 5px;
-    /* Trouver sur internet */
     transition: 0.2 ease;
 }
 
 
 #button .icon:hover{
-    /* Trouver sur internet */
     transform: scale(1.1);
 }
 
@@ -281,26 +279,33 @@ li a:hover{
 .cart{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
     gap: 12px;
     padding: 10px;
-    border: 1px solid #000;
+    outline: 1px solid #000;
     border-radius: 30px;
 }
 
 .cart img{
     background-color: rgba(166, 161, 161, 0.20);
     border-radius: inherit;
+    max-width: 255px;
+    max-height: 255px;
 }
 /* essayer de voir avec la prof comment régler ça car déjà une bordure donc impossible de régler bordure d'avance sur le cart avant hover*/
 .cart:hover{
+    outline-width: 6px;
+    /*
     border-top: 20px solid #000;
     border-right:6px solid #000;
     border-left: 6px solid #000;
     border-bottom: 3px solid #000;
     cursor: pointer;
+    */
 }
 
-.produits .grid .special{
+.produits .special{
     font-size: 1.125rem;
     padding: 10px 30px;
     justify-self: center;
@@ -309,6 +314,13 @@ li a:hover{
 
 .produits .grid .special:hover{
     color: #CC0000;
+}
+
+.dif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
 /* essayer de voir avec la prof comment régler ça */
