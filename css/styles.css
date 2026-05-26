@@ -319,7 +319,7 @@ li a:hover{
 /* essayer de voir avec la prof comment régler ça */
 
 
-
+section .change{max-width: 200px}
 
 
 /* Page liste-article.html */
@@ -401,8 +401,8 @@ li a:hover{
     text-align: start;
 }
 
-.details .renseignements .precision:first-of-type p{
-    width: 100%;
+.details .renseignements .precision p{
+    max-width: unset;
 }
 
 
@@ -413,7 +413,12 @@ li a:hover{
     align-items: center;
     padding: 30px;
     border-radius: 30px;
-    
+}
+
+.externe{
+    display: flex;
+    align-content: space-between;
+    gap: 50px;
 }
 /*------------------------------------------------------------------------------
     Components
